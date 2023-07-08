@@ -5,11 +5,14 @@ import App from './App';
 import { configureStore } from '@reduxjs/toolkit';
 import globalReducer from "state"
 import { Provider } from "react-redux";
+import { api } from "state/api";
 
-const store=configureStore({
-  reducer:{
-    global:globalReducer,
+const store = configureStore({
+  reducer: {
+    global: globalReducer,
+    [api.reducerPath]: api.reducer
   },
+  middleware: (getDefault) => getDefault().concat(api.middleware),
 })
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
