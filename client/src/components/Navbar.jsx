@@ -8,7 +8,7 @@ import { useTheme } from '@emotion/react'
 import { AppBar, IconButton, InputBase, MenuItem, Toolbar,Button,Typography,Menu ,Box} from '@mui/material'
 
 const Navbar = ({ user,isSidebarOpen, setIsSidebarOpen }) => {
-    const dispatch = useDispatch();
+    const dispatch = useDispatch()
     const theme = useTheme()
     const [anchorEl, setAnchorEl] = useState(null)
     const isOpen = Boolean(anchorEl)

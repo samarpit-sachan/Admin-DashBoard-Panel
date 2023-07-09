@@ -1,8 +1,8 @@
-import { Typography, Box, useTheme } from "@mui/material";
-import React from "react";
+import { Typography, Box, useTheme } from "@mui/material"
+import React from "react"
 
 const Header = ({ title, subtitle }) => {
-  const theme = useTheme();
+  const theme = useTheme()
   return (
     <Box>
       <Typography
@@ -17,7 +17,7 @@ const Header = ({ title, subtitle }) => {
         {subtitle}
       </Typography>
     </Box>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

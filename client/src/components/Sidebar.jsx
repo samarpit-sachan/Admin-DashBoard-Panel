@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import {
     Box,
     Divider,
@@ -11,7 +11,7 @@ import {
     ListItemText,
     Typography,
     useTheme,
-} from "@mui/material";
+} from "@mui/material"
 import {
     SettingsOutlined,
     ChevronLeft,
@@ -27,11 +27,11 @@ import {
     AdminPanelSettingsOutlined,
     TrendingUpOutlined,
     PieChartOutlined,
-} from "@mui/icons-material";
-import { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import FlexBetween from "./FlexBetween";
-import profile from "../assests/profile.jpeg";
+} from "@mui/icons-material"
+import { useEffect, useState } from "react"
+import { useLocation, useNavigate } from "react-router-dom"
+import FlexBetween from "./FlexBetween"
+import profile from "../assests/profile.jpeg"
 
 const navItems = [
     {
@@ -90,7 +90,7 @@ const navItems = [
         text: "Performance",
         icon: <TrendingUpOutlined />,
     },
-];
+]
 
 const Sidebar = ({
     user,
@@ -99,14 +99,14 @@ const Sidebar = ({
     setIsSidebarOpen,
     isNonMobile,
 }) => {
-    const { pathname } = useLocation();
-    const [active, setActive] = useState("");
-    const navigate = useNavigate();
-    const theme = useTheme();
+    const { pathname } = useLocation()
+    const [active, setActive] = useState("")
+    const navigate = useNavigate()
+    const theme = useTheme()
 
     useEffect(() => {
-        setActive(pathname.substring(1));
-    }, [pathname]);
+        setActive(pathname.substring(1))
+    }, [pathname])
 
     return (
         <Box component="nav">
@@ -149,16 +149,16 @@ const Sidebar = ({
                                         <Typography key={text} sx={{ m: "2.25rem 0 1rem 3rem" }}>
                                             {text}
                                         </Typography>
-                                    );
+                                    )
                                 }
-                                const lcText = text.toLowerCase();
+                                const lcText = text.toLowerCase()
 
                                 return (
                                     <ListItem key={text} disablePadding>
                                         <ListItemButton
                                             onClick={() => {
-                                                navigate(`/${lcText}`);
-                                                setActive(lcText);
+                                                navigate(`/${lcText}`)
+                                                setActive(lcText)
                                             }}
                                             sx={{
                                                 backgroundColor:
@@ -188,7 +188,7 @@ const Sidebar = ({
                                             )}
                                         </ListItemButton>
                                     </ListItem>
-                                );
+                                )
                             })}
                         </List>
                     </Box>
@@ -231,7 +231,7 @@ const Sidebar = ({
                 </Drawer>
             )}
         </Box>
-    );
-};
+    )
+}
 
-export default Sidebar;
+export default Sidebar
