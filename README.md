@@ -10,9 +10,11 @@ Actively participated in agile/scrum meetings, contributing to project planning,
 Documented software specifications, API documentation, and deployment instructions.
 
 #ER Diagram (Data Model)
+
 ![image](https://github.com/samarpit-sachan/Admin-DashBoard-Panel/assets/84581416/496dc47e-389d-49b8-8207-17804ca2da8b)
 
 #Deployment Diagram
+
 ![image](https://github.com/samarpit-sachan/Admin-DashBoard-Panel/assets/84581416/f7ff131f-83b7-48c7-b623-2159a2e1153e)
 
 
